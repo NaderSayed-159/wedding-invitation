@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>دعوة خطوبة</title>
+    <meta name="description" content="دعوة خطوبة" />
+    <link rel="icon" href="assets/noon-bronze.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="details.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <section id="cover" aria-label="غلاف الدعوة">
+      <button
+        id="open"
+        aria-label="افتح الدعوة"
+        aria-expanded="false"
+        aria-controls="invitation"
+      >
+        <span class="cover-art"
+          ><img
+            class="envelope"
+            src="assets/8dd10ad8567d6a06f6acbad5ad0f6bf4.png"
+            alt=""
+          /><img
+            class="bouquet"
+            src="assets/3afea2678520c7d0110b4c75fbf27e8e.png"
+            alt=""
+          /><img
+            class="initial"
+            src="assets/noon-bronze.png"
+            alt=""
+          /><span class="cover-title">دعوة خطوبة</span></span
+        ><span class="open-label">افتح الدعوة</span>
+      </button>
+    </section>
+    <main id="invitation" hidden>
+      <nav aria-label="الدعوة">
+        <a href="#celebration">افتح الدعوة</a
+        ><button id="close">اغلق الدعوة</button>
+      </nav>
+      <section class="hero" id="celebration">
+        <img class="arrival-car" src="assets/2f2ccd17da31199b4c472f25c0ac4a0b.png" alt="" aria-hidden="true" />
+        <h1 tabindex="-1" data-detail="heading">حفل حنه و عشاء</h1>
+        <h2 class="name" data-detail="name">عاصم الحصين</h2>
+        <div class="rings">
+          <img
+            src="assets/a35572ccad2dc7698a8811c8b73f1ad3.png"
+            alt="خاتمان بشريط حريري"
+          />
+        </div>
+        <p class="date" dir="ltr" data-detail="dateLabel">26.08.2026</p>
+        <p data-detail="day">الأربعاء</p>
+        <p data-detail="timeLabel">الساعة 8:00 مساءً</p>
+        <p data-detail="venue">قاعة Revira</p>
+        <div id="music-wrap" hidden>
+          <button id="music" aria-pressed="false"><span class="music-track" aria-hidden="true"><span class="music-heart">♥</span><span class="music-disc"></span><span class="music-heart">♥</span></span><span id="music-label">اضغط هنا لتشغيل الموسيقى</span></button
+          ><audio id="audio" loop preload="none"></audio>
+        </div>
+      </section>
+      <section class="countdown-section">
+        <h2>باقي من الزمن على فرحتنا</h2>
+        <div class="countdown" aria-label="الوقت المتبقي">
+          <div><strong id="days">00</strong><span>يوم</span></div>
+          <div><strong id="hours">00</strong><span>ساعة</span></div>
+          <div><strong id="minutes">00</strong><span>دقيقة</span></div>
+          <div><strong id="seconds">00</strong><span>ثانية</span></div>
+        </div>
+        <p id="countdown-message" hidden>اكتملت فرحتنا بحضوركم</p>
+      </section>
+      <section class="location venue-scene" aria-labelledby="venue-heading">
+        <div class="venue-content">
+          <p class="venue-eyebrow" id="venue-heading">مكان الحفل</p>
+          <h2 data-detail="venue">قاعة Revira</h2>
+          <div class="venue-divider" aria-hidden="true">♥</div>
+          <p class="name" data-detail="name">سفيان - الاء</p>
+          <p class="venue-date" dir="ltr" data-detail="dateLabel">30.09.2026</p>
+          <a id="map-link" class="map-link" href="https://maps.app.goo.gl/45eAyonvs1WmnS8v6" target="_blank" rel="noopener noreferrer">اضغط هنا للوصول للقاعة</a>
+        </div>
+      </section>
+      <footer>
+        <p>حضوركم سيكون أعظم هدية نتلقاها<br />في يومنا المميز</p>
+        <p class="designer-credit" dir="ltr">Designed by Nader Sayed</p>
+      </footer>
+    </main>
+  </body>
+</html>
+
